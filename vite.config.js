@@ -2,10 +2,10 @@ import { defineConfig } from "vite";
 
 export default defineConfig({
   server: {
-    open: "/index.html",
+    open: "./",
   },
   build: {
-    outDir: "../public",
+    outDir: "./public",
   },
-  root: "src",
+  root: "./",
 });

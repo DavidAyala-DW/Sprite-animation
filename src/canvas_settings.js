@@ -8,7 +8,7 @@ export const CANVAS_WIDTH  = 600;
 export const CANVAS_HEIGHT = 600;
 
 export const playerImage = new Image();
-playerImage.src = "/shadow_dog.png";
+playerImage.src = "/src/shadow_dog.png";
 
 export const spriteWidht = 575;
 export const spriteHeight = 523;
