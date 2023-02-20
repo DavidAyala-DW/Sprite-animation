@@ -10,24 +10,45 @@
 </head>
 
 <body
-  class="min-w-[320px] font-inter text-[#213547] text-base font-normal bg-[#ffffff] dark:bg-[#242424] dark:text-transparent-white m-0 flex place-items-center min-h-screen">
-  <div class="flex flex-col justify-center items-center p-8 max-w-[1280px] mx-auto">
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="will-change-[filter] p-5 h-24 hover:drop-shadow-logo" alt="Vite logo" />
-    </a>
-    <a href="https://tailwindcss.com/" target="_blank">
-      <img src="/tailwindcss.svg" class="will-change-[filter] p-5 h-18 hover:drop-shadow-logo-tw w-auto"
-        alt="TailwindCSS logo" />
-    </a>
-    <h1 class="text-6xl my-12 bg-gradient-to-r from-green-400 to-blue-500 p-4 bg-clip-text text-transparent">
-      Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="text-gray-600">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
+  class="font-inter bg-[white] flex flex-col w-full !m-0 !p-0"
+>
+
+  <main class="w-full flex flex-col space-y-10 justify-center items-center min-h-screen">
+
+    <form
+      class="flex items-center space-x-5 text-black"          
+    >
+
+      <label for="player_state"> Choose Animation </label>
+
+      <select
+        class="capitalize outline-[transparent] bg-white text-black border border-black py-1 px-2.5"
+        name="player_state"
+        id="player_state"
+      >
+        <option class="capitalize" value="idle">idle</option>
+        <option class="capitalize" value="jump">jump</option>
+        <option class="capitalize" value="fall">fall</option>
+        <option class="capitalize" value="run">run</option>
+        <option class="capitalize" value="dizzy">dizzy</option>
+        <option class="capitalize" value="sit">sit</option>
+        <option class="capitalize" value="roll">roll</option>
+        <option class="capitalize" value="bite">bite</option>
+        <option class="capitalize" value="ko">ko</option>
+        <option class="capitalize" value="getHit">get Hit</option>
+      </select>
+
+    </form>
+
+    <canvas
+      class="bg-[white] border border-black"
+      id="main-canvas"
+    >
+    </canvas>
+
+  </main>
+
+  <script type="module" src="/main.js" > </script>
 </body>
 
 </html>
